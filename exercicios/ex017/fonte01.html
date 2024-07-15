@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            /* 
+            Medidas Absolutas
+            cm, mm, in (polegada), px, pt, pc
+            
+            Medidas Relativas
+            em (relativa ao tamanho atual da fonte), ex, rem, vw, vh, %
+            
+            Recomendação da W3C: px e em
+            16px geralmente = 1em*/
+
+            font-size: 1em;  /* Normalmente os navegadores adotam como padrão 16px para o tamanho da fonte*/
+            
+            font-weight: normal;
+            /* 
+            lighter noraml bold bolder
+            notação numérica: vai de 100 até 900 (dependendo da fonte, nem todos esses valores estarão disponíveis, assim como a notação normal de ligher até bolder)
+             */
+
+             font-style: normal;
+
+             text-decoration: none; /*se colocar "underline" fica sublinhado*/
+
+             /*Para essas 3 configurações (font-weight, font-style e text-decoration) a família de fonte tem que possibilitar todas elas*/
+
+             
+        }
+
+        h1 {
+
+            /*
+            font-family: 'Work Sans', sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+            */
+
+            font: italic bolder 3em Arial, sans-serif;
+
+            /* shorthand font
+
+            - font-style -> font-weight -> font-size -> font-family */
+        }
+
+        h2 {
+            font: bold 2em Arial, sans-serif;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex fuga ut laudantium quibusdam. Repellendus aut, sed molestiae voluptatibus iure obcaecati minus perspiciatis est laborum quas blanditiis reiciendis vitae consequuntur possimus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique illo voluptatem nemo autem corrupti tenetur. Labore tempore eligendi vero dolores eos, aliquid earum sed, fugit officia vel dolor assumenda voluptas?</p>
+
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ad, autem, quidem ea aliquam voluptas quod accusamus hic ut voluptate labore temporibus vitae, velit esse! Reprehenderit necessitatibus similique deserunt magnam!</p>
+    
+</body>
+</html>
