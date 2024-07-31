@@ -10,7 +10,7 @@
     box-sizing: border-box;
 }
 
-body, html {
+html {
     height: 100vh;
 }
 
@@ -29,6 +29,10 @@ main {
     padding: 10px;
 }
 
+footer {
+    display: none;
+}
+
 h1 {
     text-align: center;
     color: white;
@@ -41,15 +45,15 @@ img {
     margin: auto;
 }
 
+img#print {
+    display: none;
+}
+
 img#phone {
     display: block;
 }
 
 img#tablet {
-    display: none;
-}
-
-img#print {
     display: none;
 }
 
